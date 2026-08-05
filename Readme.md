@@ -244,9 +244,9 @@ Add screenshots for:
   <img width="911" height="670" alt="Screenshot 2026-08-05 182517" src="https://github.com/user-attachments/assets/56762111-48ed-40e9-8a40-bc0743c0db93" />
 - Customer Dashboard
   <img width="1332" height="832" alt="Screenshot 2026-08-05 182910" src="https://github.com/user-attachments/assets/22201b21-c58a-46ad-9b11-435e765c3030" />
-- Creating a ticket
+- Creating a ticket and Chatting with AI Agent
 <img width="461" height="485" alt="Screenshot 2026-08-05 183021" src="https://github.com/user-attachments/assets/48dc0334-e113-4def-bcbc-b8e4b50de405" />
-- Chatting with AI Agent
+
   <img width="1275" height="795" alt="Screenshot 2026-08-05 184710" src="https://github.com/user-attachments/assets/b0ad9805-4adb-41bf-bb68-8d88eb346038" />
 - Uploading an Invoice
   <img width="1373" height="659" alt="Screenshot 2026-08-05 184726" src="https://github.com/user-attachments/assets/ffb3ffc7-e526-462c-b10f-5d8ce3269f81" />
@@ -256,12 +256,19 @@ Add screenshots for:
   <img width="1774" height="908" alt="Screenshot 2026-08-05 182603" src="https://github.com/user-attachments/assets/bbef964b-0a5c-4b5f-b195-d6b73ff872ff" />
 - User Managemnt & Control
   <img width="1303" height="439" alt="Screenshot 2026-08-05 182615" src="https://github.com/user-attachments/assets/f5b03120-f2d1-47e0-be0f-395ea6201fe6" />
+  
 <img width="1280" height="464" alt="Screenshot 2026-08-05 182627" src="https://github.com/user-attachments/assets/4daa9eac-c123-44e3-9c33-b7e3351b3289" />
+
 <img width="1504" height="766" alt="Screenshot 2026-08-05 182654" src="https://github.com/user-attachments/assets/5f3680f9-fd41-45f1-9d0d-24cd6b2154a8" />
+
 <img width="959" height="361" alt="Screenshot 2026-08-05 182826" src="https://github.com/user-attachments/assets/9ee2a5ad-a7c6-40e0-b358-d01adc9b66d1" />
+
 <img width="1260" height="372" alt="Screenshot 2026-08-05 182817" src="https://github.com/user-attachments/assets/3d1c8f1c-ac47-42e5-b1cd-27e64e43dbc0" />
+
 <img width="973" height="597" alt="Screenshot 2026-08-05 182808" src="https://github.com/user-attachments/assets/0eded256-e8ca-40ce-a27a-889d2f432587" />
+
 <img width="955" height="694" alt="Screenshot 2026-08-05 182800" src="https://github.com/user-attachments/assets/0ba34490-a9e6-47d4-842b-87d3dede9747" />
+
 <img width="1452" height="757" alt="Screenshot 2026-08-05 182750" src="https://github.com/user-attachments/assets/93b2aea3-9a06-4440-9fcb-02c8223ae4ba" />
 
 ---
