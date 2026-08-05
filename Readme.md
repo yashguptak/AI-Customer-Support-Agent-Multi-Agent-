@@ -245,7 +245,7 @@ Add screenshots for:
 - Customer Dashboard
   <img width="1332" height="832" alt="Screenshot 2026-08-05 182910" src="https://github.com/user-attachments/assets/22201b21-c58a-46ad-9b11-435e765c3030" />
 - Creating a ticket
- <img width="461" height="485" alt="Screenshot 2026-08-05 183021" src="https://github.com/user-attachments/assets/48dc0334-e113-4def-bcbc-b8e4b50de405" />
+  <img width="461" height="485" alt="Screenshot 2026-08-05 183021" src="https://github.com/user-attachments/assets/48dc0334-e113-4def-bcbc-b8e4b50de405" />
 - Chatting with AI Agent
   <img width="1275" height="795" alt="Screenshot 2026-08-05 184710" src="https://github.com/user-attachments/assets/b0ad9805-4adb-41bf-bb68-8d88eb346038" />
 - Uploading an Invoice
@@ -253,7 +253,7 @@ Add screenshots for:
 - User Analgytics
   <img width="1362" height="567" alt="Screenshot 2026-08-05 184740" src="https://github.com/user-attachments/assets/e66f02e0-fc15-4585-b020-9f1ace474717" />  
 - Admin Dashboard
-<img width="1774" height="908" alt="Screenshot 2026-08-05 182603" src="https://github.com/user-attachments/assets/bbef964b-0a5c-4b5f-b195-d6b73ff872ff" />
+  <img width="1774" height="908" alt="Screenshot 2026-08-05 182603" src="https://github.com/user-attachments/assets/bbef964b-0a5c-4b5f-b195-d6b73ff872ff" />
 - User Managemnt & Control
   <img width="1303" height="439" alt="Screenshot 2026-08-05 182615" src="https://github.com/user-attachments/assets/f5b03120-f2d1-47e0-be0f-395ea6201fe6" />
 <img width="1280" height="464" alt="Screenshot 2026-08-05 182627" src="https://github.com/user-attachments/assets/4daa9eac-c123-44e3-9c33-b7e3351b3289" />
