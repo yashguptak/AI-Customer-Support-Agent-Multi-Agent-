@@ -245,7 +245,7 @@ Add screenshots for:
 - Customer Dashboard
   <img width="1332" height="832" alt="Screenshot 2026-08-05 182910" src="https://github.com/user-attachments/assets/22201b21-c58a-46ad-9b11-435e765c3030" />
 - Creating a ticket
-  <img width="461" height="485" alt="Screenshot 2026-08-05 183021" src="https://github.com/user-attachments/assets/48dc0334-e113-4def-bcbc-b8e4b50de405" />
+<img width="461" height="485" alt="Screenshot 2026-08-05 183021" src="https://github.com/user-attachments/assets/48dc0334-e113-4def-bcbc-b8e4b50de405" />
 - Chatting with AI Agent
   <img width="1275" height="795" alt="Screenshot 2026-08-05 184710" src="https://github.com/user-attachments/assets/b0ad9805-4adb-41bf-bb68-8d88eb346038" />
 - Uploading an Invoice
