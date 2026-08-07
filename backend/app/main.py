@@ -19,6 +19,8 @@ from app.database.connection import engine
 from app.database.base import Base
 import app.models  # Ensure all models are imported
 
+from fastapi.middleware.cors import CORSMiddleware
+
 # Create database tables automatically
 Base.metadata.create_all(bind=engine)
 
@@ -26,6 +28,16 @@ app = FastAPI(
     title="Multi-Agent AI Customer Support",
     version="1.0.0",
     description="Backend API for Multi-Agent AI Customer Support System",
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://your-project.vercel.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -86,4 +98,4 @@ app.include_router(ws_router)
 def root():
     return {
         "message": "Welcome to the Multi-Agent AI Customer Support API!"
-    }
+    }
