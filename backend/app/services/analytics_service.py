@@ -12,26 +12,94 @@ from app.schemas.analytics import AnalyticsOverviewResponse
 class AnalyticsService:
 
     @staticmethod
-    def get_overview(db: Session) -> AnalyticsOverviewResponse:
+    def get_overview(
+        db: Session,
+        current_user: User,
+    ) -> AnalyticsOverviewResponse:
 
-        total_users = db.query(func.count(User.id)).scalar() or 0
-        total_tickets = db.query(func.count(Ticket.id)).scalar() or 0
+        # -----------------------------------------
+        # Global statistics
+        # -----------------------------------------
+
+        total_users = (
+            db.query(func.count(User.id)).scalar() or 0
+        )
+
+        # -----------------------------------------
+        # Current user's tickets
+        # -----------------------------------------
+
+        user_tickets = (
+            db.query(Ticket)
+            .filter(Ticket.user_id == current_user.id)
+        )
+
+        total_tickets = (
+            user_tickets.with_entities(
+                func.count(Ticket.id)
+            ).scalar() or 0
+        )
+
         open_tickets = (
-            db.query(func.count(Ticket.id))
+            user_tickets
             .filter(Ticket.status == TicketStatus.OPEN)
+            .with_entities(func.count(Ticket.id))
             .scalar()
             or 0
         )
+
         closed_tickets = (
-            db.query(func.count(Ticket.id))
+            user_tickets
             .filter(Ticket.status == TicketStatus.CLOSED)
+            .with_entities(func.count(Ticket.id))
             .scalar()
             or 0
         )
+
+        # -----------------------------------------
+        # Current user's conversations
+        #
+        # Conversation belongs to a Ticket,
+        # and Ticket belongs to the user.
+        # -----------------------------------------
+
         total_conversations = (
-            db.query(func.count(Conversation.id)).scalar() or 0
+            db.query(func.count(Conversation.id))
+            .join(
+                Ticket,
+                Conversation.ticket_id == Ticket.id
+            )
+            .filter(
+                Ticket.user_id == current_user.id
+            )
+            .scalar()
+            or 0
         )
-        total_messages = db.query(func.count(Message.id)).scalar() or 0
+
+        # -----------------------------------------
+        # Messages belonging to user's conversations
+        # -----------------------------------------
+
+        total_messages = (
+            db.query(func.count(Message.id))
+            .join(
+                Conversation,
+                Message.conversation_id == Conversation.id
+            )
+            .join(
+                Ticket,
+                Conversation.ticket_id == Ticket.id
+            )
+            .filter(
+                Ticket.user_id == current_user.id
+            )
+            .scalar()
+            or 0
+        )
+
+        # -----------------------------------------
+        # Knowledge base is global
+        # -----------------------------------------
 
         try:
             knowledge_documents = VectorStore.collection.count()

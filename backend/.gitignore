@@ -1,23 +1,27 @@
 # Python
-backend/venv/
-venv/
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Environment
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
 .env
-.env.*
 
-# Node
-frontend/node_modules/
-frontend/dist/
+# Frontend
+node_modules/
+dist/
 
-# Chroma
+# ChromaDB
 backend/chroma_db/
+
+# Uploaded files
+backend/uploads/
+
+# Logs
+*.log
 
 # IDE
 .vscode/
 .idea/
-
-# Logs
-*.log

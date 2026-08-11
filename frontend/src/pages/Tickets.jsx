@@ -101,7 +101,7 @@ const Tickets = () => {
         conversationId = convsRes.data[0].id;
       } else {
         // 2. Create new conversation
-        const createRes = await client.post('/conversations', { ticket_id: ticketId });
+        const createRes = await client.post('/api/conversations', { ticket_id: ticketId });
         conversationId = createRes.data.id;
       }
 
